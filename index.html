@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script data-require="angular.js@~1.4.2" data-semver="1.4.9" src="https://code.angularjs.org/1.4.9/angular.js"></script>
+    <script data-require="angular-route@1.4.2" data-semver="1.4.2" src="https://code.angularjs.org/1.4.2/angular-route.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-mid-9">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>
+                  <a href="#/ShowOrder/MyDetails">Details</a>
+                </th>
+                <th>
+                  <a href="#/ShowOrder/NewDetails">New User</a>
+                </th>
+              </tr>
+            </thead>
+          </table>
+          <div ng-view="">
+            The order details goes here...
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

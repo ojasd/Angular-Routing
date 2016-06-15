@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="orderApp">
+
+<head>
+<meta charset="utf-8" />
+<title>AngularJS Plunker</title>
+<link rel="stylesheet"
+	href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script
+	src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+<script src="app.js"></script>
+</head>
+
+<body ng-controller="newOrderCntrl">
+	
+		<form ng-submit="addNewOrder()">
+			<table class="table">
+				<tr class="active">
+					<td class="col-md-3"> Media	</td>
+					<td class="col-md-3">
+						<input type="text" ng-model="media" />
+					</td>
+					<td class="col-md-3"></td>
+					<td class="col-md-3"></td>
+				</tr>
+								
+				<tr class="success">
+					<td class="col-md-3"> Name	</td>
+					<td class="col-md-3">
+						<input type="text" ng-model="name" />
+					</td>
+					<td class="col-md-3"></td>
+					<td class="col-md-3"></td>
+				</tr>
+				<tr>
+				  <tr class="active">
+					<td class="col-md-3"> Icon	</td>
+					<td class="col-md-3">
+						<input type="text" ng-model="icon" />
+					</td>
+					<td class="col-md-3"></td>
+					<td class="col-md-3"></td>
+				</tr>
+				<tr class="active">
+					<td class="col-md-3"> Users	</td>
+					<td class="col-md-3">
+						<input type="text" ng-model="users" />
+					</td>
+					<td class="col-md-3"></td>
+					<td class="col-md-3"></td>
+				</tr>
+				<tr>
+					<td>
+						<button class= "btn btn-primary">Add</button>
+						<p>{{msg}}</p>
+					</td>
+				</tr>
+			</table>
+		</form>
+	
+</body>
+</html>

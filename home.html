@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+      <script src="script.js"></script>
+  </head>
+
+  <body ng-controller="homecntrl">
+    <table class="table table-striped table-bordered">
+      <tbody>
+        <tr>
+          <th>Media</th>
+          <th>Name</th>
+          <th>Icon</th>
+          <th>Users</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+        <tr class="success" ng-repeat="detail in details">
+          <td>{{detail.media}}</td>
+          <td>{{detail.name}}</td>
+          <td><img src ="{{detail.icon}}" width=50 height=50/></td>
+          <td>{{detail.users}}</td>
+          <td>
+            <a ng-click="editOrder(detail.name)" href="#">Edit</a>
+          </td>
+          <td>
+            <a ng-click="delOrder(detail.name)" href="#">Del</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+
+</html>
